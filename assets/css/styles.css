@@ -129,6 +129,7 @@ img {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav_menu {
   position: fixed;
@@ -487,5 +488,133 @@ img {
   padding-left: 1rem;
 }
 /* ===== FOOTER =====*/
-
+.footer {
+  background-color: var(--first-color-darken);
+  color: var(--first-color-lighten);
+  text-align: center;
+}
+.footer_title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
+}
+.footer_description {
+  margin-bottom: var(--mb-2);
+}
+.footer-social {
+  margin-bottom: 3rem;
+}
+.footer_link {
+  display: inline-flex;
+  background-color: var(--first-color);
+  color: var(--first-color-lighten);
+  font-size: 1.1rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin: 0 var(--mb-1);
+  transition: 0.3s;
+}
+.footer_link:hover {
+  background-color: var(--first-color-lighten);
+  color: var(--first-color);
+}
+.footer_copy {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+}
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px) {
+  .home_button {
+    width: initial;
+  }
+  .nav_menu {
+    width: var(--nav-width);
+  }
+  .about_container,
+  .skills_container,
+  .works_container,
+  .contact_container,
+  .contact_input {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about_data {
+    text-align: initial;
+  }
+  .about_description {
+    margin-bottom: var(--mb-5);
+  }
+  .about_img {
+    width: 220px;
+  }
+  .about_information {
+    padding-left: 4rem;
+  }
+  .education_time {
+    padding: 0 2rem;
+  }
+  .project {
+    background: none;
+  }
+  .project_container {
+    background-color: var(--first-color);
+    grid-template-columns: 2fr 1.2fr;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+  }
+  .project_data {
+    padding: 3rem 0;
+  }
+  .project-title,
+  .project_data {
+    text-align: initial;
+  }
+  .project_img {
+    width: 330px;
+    align-self: center;
+  }
+  .contact_input {
+    display: grid;
+    column-gap: 1.5rem;
+  }
+  .contact_info {
+    padding-left: 3rem;
+  }
+  .footer {
+    background: none;
+  }
+  .footer_container {
+    background-color: var(--first-color-darken);
+    padding: 3rem 0;
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+    padding-left: var(--nav-width);
+  }
+  .l-header {
+    width: 0;
+  }
+  .nav_toggle,
+  nav_logo,
+  .nav_close {
+    display: none;
+  }
+  .nav_menu {
+    left: 0;
+  }
+  .home_container {
+    height: 100vh;
+  }
+  .section {
+    padding: 3rem 0 2rem;
+  }
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .works_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
