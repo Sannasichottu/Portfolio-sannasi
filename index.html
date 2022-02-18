@@ -1,92 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
+    <title>Responsive personal portfolio | Sannasi</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="1-header">
+      <nav class="nav bd-grid">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div>
+          <a href="#" class="nav_logo">Sannasi</a>
+        </div>
+        <div class="nav_menu" id="nav-menu">
+          <div class="nav_close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">About</a>
+            </li>
+            <li class="nav_item">
+              <a href="#works" class="nav_link">Works</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-        <title>Responsive personal portfolio | Sannasi</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="1-header">
-            <nav class="nav bd-grid">
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-                <div>
-                    <a href="#" class="nav_logo">Sannasi</a>
-                </div>
-                <div class="nav_menu" id="nav-menu">
-                    <div class="nav_close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-                        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-                        <li class="nav_item"><a href="#works" class="nav_link">Works</a></li>
-                        <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
-                    </ul>
-                </div>
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home_container bd-grid">
+          <div class="home_data">
+            <div class="home_img">
+              <img src="./assets/img/profile.JPG" alt="" />
+            </div>
+            <h1 class="home_title">Sannasi Marimuthu</h1>
+            <span class="home_profession">Full Stack Developer</span>
 
-            </nav>
-        </header>
+            <div class="home_social">
+              <a
+                href="https://www.linkedin.com/in/sannasi-m-58a9b421a/"
+                class="home_social-link"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/Sannasichottu"
+                class="home_social-link"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://app.netlify.com/teams/sannasichottu/sites"
+                class="home_social-link"
+                ><i class="bx bxl-netlify"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/sannasi_chotu/"
+                class="home_social-link"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+            </div>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home_container bd-grid">
-                    <div class="home_data">
-                        <div class="home_img">
-                            <img src="./assets/img/profile.JPG" alt="">
-                        </div>
-                        <h1 class="home_title">Sannasi Marimuthu</h1>
-                        <span class="home_profession">Full Stack Developer</span>
+            <a
+              download=""
+              href="./assets/Resume/Sannasi FSD cv.pdf"
+              class="button home_button"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
 
-                        <div class="home_social">
-                            <a href="https://www.linkedin.com/in/sannasi-m-58a9b421a/" class="home_social-link"><i class='bx bxl-linkedin'></i></a>
-                            <a href="https://github.com/Sannasichottu" class="home_social-link"><i class='bx bxl-github'></i></a>
-                            <a href="https://app.netlify.com/teams/sannasichottu/sites" class="home_social-link"><i class='bx bxl-netlify'></i></a>
-                            <a href="https://www.instagram.com/sannasi_chotu/" class="home_social-link"><i class='bx bxl-instagram'></i></a>
-                        </div>
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <span class="section-subtitle">My indro</span>
+        <h2 class="section-title">About Me</h2>
 
-                        <a download="" href="./assets/Resume/Sannasi FSD cv.pdf" class="button home_button">Download Resume</a>
-                    </div>
-                </div>
+        <div class="about_container bd-grid">
+          <div class="about_data">
+            <p class="about_description">
+              Hi, I'm a web Developer and programmer, passionate about creating
+              and developing web interfaces.I'm fresher in this area of work.My
+              expertise is to create front end , back end , data base ..
+            </p>
+            <img src="./assets/img/about.JPG" alt="" class="about_img">
+          </div>
+          <div class="about_information">
+              <h3 class="about_information-title">Information</h3>
+              
+              <div class="about_information-data">
+                <i class='bx bx-user about_information-icon'></i> 
+                <span>Sannasi Marimuthu</span>   
+              </div>
+              <div class="about_information-data">
+                <i class='bx bx-phone about_information-icon'></i> 
+                <span>+91 72720-76763</span>   
+              </div>
+              <div class="about_information-data">
+                <i class='bx bx-envelope about_information-icon'></i> 
+                <span>sannasichottu@gmail.com</span>   
+              </div>
+          </div>
+        </div>
+      </section>
 
-            </section>            
+      <!--===== SKILLS =====-->
 
-            <!--===== ABOUT =====-->
-            
+      <!--===== EDUCATION =====-->
 
-            <!--===== SKILLS =====-->
-            
+      <!--===== SERVICES =====-->
 
-            <!--===== EDUCATION =====-->
-            
+      <!--===== PROJECT IN MIND =====-->
 
-            <!--===== SERVICES =====-->
-            
+      <!--===== WORKS =====-->
 
-            <!--===== PROJECT IN MIND =====-->
-            
+      <!--===== CONTACT =====-->
+    </main>
 
-            <!--===== WORKS =====-->
-            
+    <!--===== FOOTER =====-->
 
-            <!--===== CONTACT =====-->
-            
-        </main>
-
-        <!--===== FOOTER =====-->
-        
-        <!--===== MAIN JS =====-->
-        <script src="./assets/js/main.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
