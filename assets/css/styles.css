@@ -286,7 +286,54 @@ img {
 }
 
 /* ===== SKILLS =====*/
-
+.skills_container {
+  row-gap: 2rem;
+}
+.skills_subtitle {
+  font-size: var(--h3-font-size);
+  color: var(--first-color-dark);
+  margin-bottom: var(--mb-2);
+}
+.skills_data {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 var(--mb-2);
+  margin-bottom: var(--mb-4);
+}
+.skills_name {
+  text-transform: uppercase;
+}
+.skills_bar {
+  position: absolute;
+  bottom: -0.75rem;
+  height: 0.25rem;
+  background-color: var(--first-color);
+}
+.skills_html {
+  width: 80%;
+}
+.skills_bootstrap {
+  width: 80%;
+}
+.skills_js {
+  width: 70%;
+}
+.skills_reactjs {
+  width: 60%;
+}
+.skills_nodejs {
+  width: 70%;
+}
+.skills_python {
+  width: 60%;
+}
+.skills_mysql {
+  width: 40%;
+}
+.skills_mongodb {
+  width: 40%;
+}
 /* ===== EDUCATION =====*/
 
 /* ===== SERVICES =====*/
