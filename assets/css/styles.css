@@ -335,12 +335,118 @@ img {
   width: 40%;
 }
 /* ===== EDUCATION =====*/
-
+.education_container {
+  row-gap: 2rem;
+}
+.education_content {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+}
+.education_year,
+.education_race {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.25rem;
+}
+.education_university,
+.education_specialty {
+  display: block;
+  font-size: var(--small-font-size);
+}
+.education_year,
+.education_university {
+  text-align: right;
+}
+.education_time {
+  padding: 0 1rem;
+  justify-self: center;
+}
+.education_rounder {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+.education_rounder::before {
+  content: "";
+  position: absolute;
+  transform: translate(-4px, -4px);
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--first-color);
+  border-radius: 50%;
+}
+.education_line {
+  display: block;
+  height: 90%;
+  width: 2px;
+  background-color: var(--first-color);
+  transform: translate(5px, -4px);
+}
 /* ===== SERVICES =====*/
 
 /* ===== PROJECT IN MIND  =====*/
-
+.project {
+  background-color: var(--first-color);
+  padding-bottom: 0;
+}
+.project_container {
+  row-gap: 2rem;
+}
+.project_data {
+  text-align: center;
+}
+.project-title,
+.project_description {
+  color: var(--first-color-lighten);
+}
+.project_description {
+  margin-bottom: var(--mb-4);
+}
+.project_img {
+  width: 220px;
+  justify-self: center;
+}
 /* ===== WORKS =====*/
+.works_container {
+  justify-items: center;
+  row-gap: 2rem;
+}
+.works_img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.works_data {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(204, 75, 44, 0.7);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.works_link {
+  display: inline-flex;
+  font-size: 1.5rem;
+  background-color: var(--first-color-lighten);
+  color: var(--first-color);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-bottom: var(--mb-2);
+}
+.works_title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color-lighten);
+}
+.works_img:hover .works_data {
+  bottom: 0;
+}
 
 /* ===== CONTACT =====*/
 
