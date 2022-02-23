@@ -106,6 +106,14 @@ img {
   font-weight: var(--font-bold);
   margin-bottom: 0.25rem;
 }
+.section-subtitle2 {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--first-color-darken);
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: 1.3rem;
+}
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
@@ -443,6 +451,12 @@ img {
   border-radius: 0.25rem;
   margin-bottom: var(--mb-2);
 }
+.use_code {
+  color: var(--first-color);
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+}
+
 .works_title {
   font-size: var(--h2-font-size);
   color: var(--first-color-lighten);
