@@ -449,17 +449,19 @@ img {
   color: var(--first-color);
   padding: 0.25rem;
   border-radius: 0.25rem;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 .use_code {
   color: var(--first-color);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: var(--font-bold);
+  color:var(--first-color-lighten);
+  font-style: italic;
 }
 
 .works_title {
   font-size: var(--h2-font-size);
-  color: var(--first-color-lighten);
+  color: var(--first-color-light);
 }
 .works_img:hover .works_data {
   bottom: 0;
