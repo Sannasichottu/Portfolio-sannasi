@@ -98,6 +98,7 @@ img {
   margin-bottom: var(--mb-3);
   text-align: center;
 }
+
 .section-subtitle {
   display: block;
   font-size: var(--small-font-size);
@@ -476,7 +477,8 @@ img {
   padding: 1rem;
   outline: none;
   border: none;
-  background-color: var(--first-color-light);
+  
+  background-color:navajowhite;
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-2);
   border-radius: 0.5rem;
@@ -554,6 +556,7 @@ img {
   .contact_input {
     grid-template-columns: repeat(2, 1fr);
   }
+  
   .about_data {
     text-align: initial;
   }
