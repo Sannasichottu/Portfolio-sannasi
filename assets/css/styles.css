@@ -346,6 +346,9 @@ img {
 .skills_mongodb {
   width: 40%;
 }
+.skills_content{
+  display: contents;
+}
 /* ===== EDUCATION =====*/
 .education_container {
   row-gap: 2rem;
